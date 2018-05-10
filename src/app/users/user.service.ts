@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class UserService {
-	private url = 'http://jsonplaceholder.typicode.com/users/';
+	private url = 'https://jsonplaceholder.typicode.com/users/';
 	constructor(private _http: HttpClient) {}
 
 	getUser(id: string): Observable<any> {
