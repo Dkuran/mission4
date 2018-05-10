@@ -1,0 +1,5 @@
+<div class="container">
+  <input class="container-input" name='pass' [(ngModel)]='userPass' type='password' #pass='ngModel'>
+  <span style="font-style: italic; color: grey; font-size: 9px;">hint: '1234'</span>
+  <button [disabled]="userPass === ''" type="button" class="container-button" (click)="submitPassword()">Entrar</button>
+</div>
