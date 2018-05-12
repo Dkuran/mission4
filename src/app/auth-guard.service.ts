@@ -12,12 +12,12 @@ export class AuthGuard implements CanLoad {
 
   canLoad(route: Route): boolean {
     // console.log(this._auth.getPassword());
-    if (!this._auth.validatePassword()) {
-      this._router.navigate(['login']);
-    } else {
-      return this._auth.validatePassword();
-    }
-    // return this._auth.validatePassword();
+    // if (!this._auth.validatePassword()) {
+    //   this._router.navigate(['login']);
+    // } else {
+    //   return this._auth.validatePassword();
+    // }
+    return this._auth.validatePassword();
   }
 
 }
